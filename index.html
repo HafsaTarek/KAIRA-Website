@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAIRA</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-black fw-bold text-white"
+      >
+        <div class="container">
+          <!-- Brand -->
+          <a class="navbar-brand brand-name" href="#">KAIRA</a>
+
+          <!-- Hamburger Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible Content -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Left Links -->
+            <ul class="nav-links navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <!-- Search Bar -->
+            <form class="d-flex me-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </form>
+
+            <!-- Right Links -->
+            <ul class="navbar-nav extras >
+              <li class="nav-item">
+                <a class="nav-link text-light"" href="#">Wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light"
+                  href="#">Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center text-white">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold">Discover the Latest Fashion</h1>
+        <p class="lead">Trendy. Stylish. Affordable.</p>
+        <a href="#" class="CTA btn btn-outline-light bg-dark btn-lg mt-3"
+          >Shop Now</a
+        >
+      </div>
+    </section>
+
+    <section class="featured-products-section">
+      <h2>Featured Products</h2>
+      <div class="products-wrapper">
+        <div class="card product-card p-3">
+          <img
+            src="./images/Suit.jpg"
+            class="card-img-top"
+            alt="Product 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Formal Suit</h5>
+            <p class="card-text">$350</p>
+            <button class="btn add-to-cart-btn" data-product="Formal Suit" data-price="350">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="card product-card p-3">
+          <img
+            src="./images/Dotted Shirt.jpg"
+            class="card-img-top"
+            alt="Product 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Dotted Shirt</h5>
+            <p class="card-text">$150</p>
+            <button class="btn">Buy Now</button>
+          </div>
+        </div>
+
+        <div class="card product-card p-3">
+          <img
+            src="./images/Blazer.jpg"
+            class="card-img-top"
+            alt="Product 3"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Oversized Plazer</h5>
+            <p class="card-text">$250</p>
+            <button class="btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="card product-card p-3">
+          <img
+            src="./images/Jeans.jpg"
+            class="card-img-top"
+            alt="Product 3"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Jeans</h5>
+            <p class="card-text">$100</p>
+            <button class="btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="show-all-container">
+        <a href="/products" class="btn show-all-btn">Show All Products</a>
+      </div>
+    </section>
+
+    <section class="about-us-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="./images/Hero.jpg" alt="about-us-img" class="img-fluid rounded">
+          </div>
+          <div class="col-md-6 text-center text-md-start">
+            <h2>About KAIRA</h2>
+            <p class="lead">
+              At KAIRA, we blend modern fashion with timeless elegance. Our pieces are curated to bring out your best self — bold, confident, and effortlessly stylish.
+            </p>
+            <p>
+            Whether you're dressing up for an event or keeping it casual, KAIRA offers high-quality pieces that reflect your personality. Welcome to fashion made for you.   
+            </p>
+              <a href="/about" class="btn btn-dark mt-3">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-5">What Our Customers Say</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial p-4 border rounded shadow-sm">
+          <p>"Absolutely love the quality and fit of KAIRA products. I'll definitely buy again!"</p>
+          <h6 class="mt-3 fw-bold">— Sarah A.</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial p-4 border rounded shadow-sm">
+          <p>"Stylish and comfortable! Got so many compliments on my new jacket."</p>
+          <h6 class="mt-3 fw-bold">— Christina R.</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial p-4 border rounded shadow-sm">
+          <p>"Fast shipping and the packaging was lovely. KAIRA really pays attention to detail."</p>
+          <h6 class="mt-3 fw-bold">— Rose H.</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter-section py-5 text-white" style="background-color: #121212;">
+  <div class="container text-center">
+    <h2 class="mb-3">Join Our Newsletter</h2>
+    <p class="mb-4">Stay updated with our latest offers and collections</p>
+    <form class="row justify-content-center">
+      <div class="col-md-6">
+        <input type="email" class="form-control mb-2" placeholder="Enter your email" required />
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-outline-light w-100" type="submit">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<footer class="footer bg-black text-white py-4">
+  <div class="container text-center">
+    <p class="mb-1">© 2025 KAIRA. All Rights Reserved.</p>
+    <p class="large">Follow us on
+      <a href="#">Instagram </a>
+      <strong>|</strong>
+      <a href="#">Facebook</a>
+      <strong>|</strong>
+      <a href="#">Twitter</a>
+      <strong>|</strong>
+  </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
